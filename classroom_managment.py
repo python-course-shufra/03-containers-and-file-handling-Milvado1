@@ -43,7 +43,7 @@ def add_student(name, email=None):
     'grade': initialize with empty list
     """
     if email == None:
-        email = name+'@example.com'
+        email = name.lower()+'@example.com'
 
     student = {}
     student['name'] = name
